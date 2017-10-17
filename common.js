@@ -4720,7 +4720,7 @@ var Slider = function (_React$Component) {
       var handle = handleGenerator({
         className: prefixCls + '-handle',
         vertical: vertical,
-        offset: this.props.inverted ? this.props.max - offset : offset,
+        offset: this.props.inverted ? 100 - offset : offset,
         value: value,
         dragging: dragging,
         disabled: disabled,
@@ -4737,7 +4737,7 @@ var Slider = function (_React$Component) {
         className: prefixCls + '-track',
         vertical: vertical,
         included: included,
-        offset: this.props.inverted ? this.props.max - offset : 0,
+        offset: this.props.inverted ? 100 - offset : 0,
         length: offset,
         style: __WEBPACK_IMPORTED_MODULE_0_babel_runtime_helpers_extends___default()({}, minimumTrackStyle, _trackStyle)
       });
